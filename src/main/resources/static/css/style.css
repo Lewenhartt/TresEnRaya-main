@@ -14,13 +14,22 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
+@font-face {
+    font-family: 'PressStart';
+    src: url(PressStart.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 ::selection {
     background: transparent;
 }
 
 body {
-    background: #A5DAD2;
-    font-family: Quicksand, san-serif;
+    background-image: url('https://media.giphy.com/media/hkqefnFjn2MWVl6xvq/giphy.gif');
+    background-position: center 25%;
+    background-size: cover;
+    font-family: PressStart;
 }
 
 .bgWhite {
@@ -36,7 +45,26 @@ body {
 }
 
 .colorDark {
-    color: #516D66;
+    color: white;
+    animation: glitch 3s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: green
+        0px 0px,
+        blue 0px 0px;
+    }
+    40% {
+        text-shadow: red
+        -8px 0px,
+        cyan -8px 0px;
+    }
+    100% {
+        text-shadow: green
+        0px 0px,
+        blue 0px 0px;
+    }
 }
 
 .bgRed {
