@@ -26,8 +26,8 @@
 }
 
 body {
-    background-image: url('https://media.giphy.com/media/hkqefnFjn2MWVl6xvq/giphy.gif');
-    background-position: center 25%;
+    background-image: url('https://media.giphy.com/media/tBwXwUufSNkCKJxBm5/giphy.gif');
+    background-position: center 10%;
     background-size: cover;
     font-family: PressStart;
 }
@@ -65,6 +65,10 @@ body {
         0px 0px,
         blue 0px 0px;
     }
+}
+
+.panel-body{
+    border-radius: 100%;
 }
 
 .bgRed {
