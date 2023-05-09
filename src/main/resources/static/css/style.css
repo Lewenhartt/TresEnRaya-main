@@ -84,12 +84,14 @@ body {
 }
 
 .gameBoard {
-    width: 100%;
+    margin-top: 10%;
+    width: 65%;
+    margin-left: 17%;
 }
 
 .gameBoard td {
     text-align: center;
-    color: #516D66;
+    color: #ffffff;
     font-size: 8em;
     cursor: pointer;
     transition: all 0.5s;
@@ -110,8 +112,27 @@ body {
 }
 
 .scoreBoard {
-    color: #516D66;
+    color: #ffffff;
     height: 100px;
+    animation: glitch2 3s infinite;
+}
+
+@keyframes glitch2 {
+    0% {
+        text-shadow: green
+        0px 0px,
+        blue 0px 0px;
+    }
+    50% {
+        text-shadow: red
+        -8px 0px,
+        cyan -8px 0px;
+    }
+    100% {
+        text-shadow: green
+        0px 0px,
+        blue 0px 0px;
+    }
 }
 
 .boardCol {
