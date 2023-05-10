@@ -14,10 +14,11 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
+/*Se ha añadido una nueva fuente*/
 @font-face {
-    font-family: 'PressStart';
-    src: url(PressStart.ttf) format('truetype');
-    font-style: normal;
+    font-family: 'PressStart'; /*Se le asigna un nombre para usos posteriores*/
+    src: url(PressStart.ttf) format('truetype'); /*Busca el archivo y se indica su formato*/
+    font-style: normal; /*Caracteristicas generales*/
     font-weight: normal;
 }
 
@@ -26,10 +27,10 @@
 }
 
 body {
-    background-image: url('https://media.giphy.com/media/tBwXwUufSNkCKJxBm5/giphy.gif');
-    background-position: center 10%;
-    background-size: cover;
-    font-family: PressStart;
+    background-image: url('https://media.giphy.com/media/tBwXwUufSNkCKJxBm5/giphy.gif'); /*Fondo animado*/
+    background-position: center 10%; /*Ubicación del fondo*/
+    background-size: cover; /*Característica para que cubra toda la página*/
+    font-family: PressStart; /*Se utiliza la fuente agregada anteriormente*/
 }
 
 .bgWhite {
@@ -46,10 +47,10 @@ body {
 
 .colorDark {
     color: white;
-    animation: glitch 3s infinite;
+    animation: glitch 3s infinite; /*Creamos una animacion llamada glith para el titulo principal*/
 }
 
-@keyframes glitch {
+@keyframes glitch { /*Ponemos las características de movimiento y colores*/
     0% {
         text-shadow: green
         0px 0px,
@@ -114,10 +115,10 @@ body {
 .scoreBoard {
     color: #ffffff;
     height: 100px;
-    animation: glitch2 3s infinite;
+    animation: glitch2 3s infinite; /*Creamos la misma animación llamada glitch2 para los nombres de los jugadores*/
 }
 
-@keyframes glitch2 {
+@keyframes glitch2 { /*Repetimos el mismo proceso de animación*/
     0% {
         text-shadow: green
         0px 0px,
@@ -147,4 +148,16 @@ body {
 
 .scoreBoard span.active {
     border-bottom: 4px solid #F286A0;
+}
+
+.botonreglas{ /*Diseño para el botón "Reglas del juego"*/
+    padding: 10px 20px;
+    border: 0;
+    color: #43397c;
+    position: absolute;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: -15%;
 }
