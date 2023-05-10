@@ -138,7 +138,7 @@ class Board {
     	}
     	
 
-    	alert(winner+" Has ganado!👌 "+looser+" Has perdido😥.");
+    	alert(winner+" Has ganado!👌 "+looser+" Has perdido😥.");/*Cambio de mensaje*/
     	document.getElementById("reloadBtn").style.display="block";
 
     	this.disableAll();
@@ -147,7 +147,7 @@ class Board {
 
     doDraw() {
 
-    	alert("Empate🤜🤛");
+    	alert("Empate🤜🤛");/*Cambio de mensaje*/
         document.getElementById("reloadBtn").style.display="block";
 
         this.lowlightCells();
