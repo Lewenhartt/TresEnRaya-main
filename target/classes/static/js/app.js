@@ -165,4 +165,8 @@ function sendMessage(action, data) {
     socket.send( JSON.stringify(resp) );
 }
 
+function reloadGame() {
+	location.reload()
+}
+
 start();

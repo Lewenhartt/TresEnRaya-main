@@ -137,13 +137,14 @@ class Board {
     	}
     	
     	alert(winner+" wins! "+looser+" looses.");
-    	
+    	document.getElementById("reloadBtn").style.display="block";
     	this.disableAll();
         this.highlightCells(pos);
     }
 
     doDraw() {
     	alert("Draw!");
+        document.getElementById("reloadBtn").style.display="block";
         this.lowlightCells();
     }
 
