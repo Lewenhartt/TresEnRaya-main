@@ -41,11 +41,12 @@
 		</div>
 		<div class="row">
 			<div class="boton2">
-				<span class="reload-btn">
-					<button class="btn2-reload" id="reloadBtn" onclick="reloadGame()" style="display: none;">Volver a jugar</button>
+				<span class="reload-btn"> <!--Se le asigna una clase para luego darle estilo en el css-->
+					<button class="btn2-reload" id="reloadBtn" onclick="reloadGame()" style="display: none;">Volver a jugar</button> <!--Botón para volver al jugar, su función está descrita en el app.js-->
 				</span>
 			</div>
 		</div>
+		<button class="botonreglas" onclick="location.href='reglas.html'">Reglas del juego</button> <!--Botón para las reglas del juego al cual se le asigna una función-->
 	</div>
 
 	<script src="/js/Board.js"></script>
