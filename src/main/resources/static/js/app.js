@@ -165,8 +165,8 @@ function sendMessage(action, data) {
     socket.send( JSON.stringify(resp) );
 }
 
-function reloadGame() {
-	location.reload()
+function reloadGame() { //Función "onclick()" asignada al botón
+	location.reload() //Recarga de la página
 }
 
 start();
