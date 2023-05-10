@@ -116,9 +116,15 @@ class Board {
 
     doMark(cellId, label) {
         let cell = this.cells[cellId];
-        cell.textContent = label;
         cell.classList.add('notActive');
         cell.setAttribute('marked', 'true');
+        if(label=='X'){
+            cell.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGAg-9a7FnEp2xg3j9FRXkQWXTRqS-vfH_oXb6gaQkxeclVXdK1_AWCZdq5mAGweJ-kU&usqp=CAU)";
+        }
+        if(label=='O'){
+            cell.style.backgroundImage="url(https://img2.freepng.es/20180622/ej/kisspng-emoji-smiley-wink-emoticon-emoji-telegram-5b2d556f265c13.7716540015296976471571.jpg)";
+        }
+       
     }
 
     doWinner(winner, pos) {
@@ -130,14 +136,19 @@ class Board {
     		looser = this.players[0].name;
     	}
     	
+
     	alert(winner+" Has ganado!👌 "+looser+" Has perdido😥.");
-    	
+    	document.getElementById("reloadBtn").style.display="block";
+
     	this.disableAll();
         this.highlightCells(pos);
     }
 
     doDraw() {
+
     	alert("Empate🤜🤛");
+        document.getElementById("reloadBtn").style.display="block";
+
         this.lowlightCells();
     }
 
