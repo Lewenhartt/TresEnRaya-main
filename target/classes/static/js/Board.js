@@ -136,15 +136,19 @@ class Board {
     		looser = this.players[0].name;
     	}
     	
-    	alert(winner+" wins! "+looser+" looses.");
+
+    	alert(winner+" Has ganado!👌 "+looser+" Has perdido😥.");
     	document.getElementById("reloadBtn").style.display="block";
+
     	this.disableAll();
         this.highlightCells(pos);
     }
 
     doDraw() {
-    	alert("Draw!");
+
+    	alert("Empate🤜🤛");
         document.getElementById("reloadBtn").style.display="block";
+
         this.lowlightCells();
     }
 
