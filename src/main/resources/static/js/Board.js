@@ -114,15 +114,16 @@ class Board {
         }
     }
 
+    /* Creamos los dos if, para cambiar la 'X' y el '0' por las imagenes que elijamos poniendo su enlace*/
     doMark(cellId, label) {
         let cell = this.cells[cellId];
         cell.classList.add('notActive');
         cell.setAttribute('marked', 'true');
         if(label=='X'){
-            cell.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGAg-9a7FnEp2xg3j9FRXkQWXTRqS-vfH_oXb6gaQkxeclVXdK1_AWCZdq5mAGweJ-kU&usqp=CAU)";
+            cell.style.backgroundImage="url(https://i.pinimg.com/170x/ed/b2/44/edb24424a29c833b319b237e697890bf.jpg)";
         }
         if(label=='O'){
-            cell.style.backgroundImage="url(https://img2.freepng.es/20180622/ej/kisspng-emoji-smiley-wink-emoticon-emoji-telegram-5b2d556f265c13.7716540015296976471571.jpg)";
+            cell.style.backgroundImage="url(https://i.pinimg.com/236x/4b/47/7d/4b477dbad847350e7128fe08365257c6.jpg)";
         }
        
     }
